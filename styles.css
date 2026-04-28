@@ -826,17 +826,19 @@ body {
 
 .product-card-visual {
   margin-top: 24px;
-  border-radius: 12px;
+  margin-left: -28px;
+  margin-right: -28px;
+  margin-bottom: -28px;
   overflow: hidden;
+  border-radius: 0 0 var(--radius) var(--radius);
 }
 
 .product-img {
   width: 100%;
-  height: 240px;
-  object-fit: contain;
+  height: 260px;
+  object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 12px;
   transition: transform 0.4s ease;
 }
 
@@ -845,7 +847,7 @@ body {
 }
 
 .product-card--large .product-img {
-  height: 240px;
+  height: 300px;
 }
 
 /* ── CAPABILITIES ────────────────────────────────────────── */
