@@ -496,7 +496,7 @@ body {
 
 .stats-track {
   display: flex;
-  gap: 24px;
+  gap: 0;
   animation: marquee 30s linear infinite;
   width: max-content;
 }
@@ -508,6 +508,7 @@ body {
   white-space: nowrap;
   font-size: 13px;
   font-weight: 500;
+  padding-right: 24px;
 }
 
 .stats-set .dot { opacity: 0.3; }
