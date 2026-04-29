@@ -36,138 +36,124 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-eyebrow">Introducing Lucid Infinity™</div>
-    <h1 class="hero-headline">The future of<br>food packaging.</h1>
-    <p class="hero-sub">Pad-less. Patented. Proven.</p>
-    <div class="hero-actions">
-      <a href="#products" class="btn-primary">Explore products</a>
-      <a href="#sustainability" class="btn-ghost">Our sustainability mission ›</a>
+    <!-- Decorative background rings -->
+    <div class="hero-rings">
+      <div class="hr-ring hr-lg"></div>
+      <div class="hr-ring hr-md"></div>
+      <div class="hr-ring hr-sm"></div>
     </div>
-    <div class="hero-slider">
-      <div class="hero-slide active">
-        <img src="assets/Hero Images/tray1.png" alt="Lucid Infinity tray" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/Hero Images/tray2.png" alt="Lucid Infinity tray" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/Hero Images/tray3.png" alt="Lucid Infinity tray" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/Hero Images/tray4.png" alt="Lucid Infinity tray" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/Hero Images/tray5.png" alt="Lucid Infinity tray" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/Hero Images/tray6.png" alt="Lucid Infinity tray" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/Hero Images/tray7.png" alt="Lucid Infinity tray" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/Hero Images/tray8.png" alt="Lucid Infinity tray" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/Hero Images/tray9.png" alt="Lucid Infinity tray" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/Hero Images/tray10.png" alt="Lucid Infinity tray" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/Hero Images/tray11.png" alt="Lucid Infinity tray" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/Hero Images/tray12.png" alt="Lucid Infinity tray" />
-      </div>
-      <div class="hero-slider-dots">
-        <button class="slider-dot active" data-index="0"></button>
-        <button class="slider-dot" data-index="1"></button>
-        <button class="slider-dot" data-index="2"></button>
-        <button class="slider-dot" data-index="3"></button>
-        <button class="slider-dot" data-index="4"></button>
-        <button class="slider-dot" data-index="5"></button>
-        <button class="slider-dot" data-index="6"></button>
-        <button class="slider-dot" data-index="7"></button>
-        <button class="slider-dot" data-index="8"></button>
-        <button class="slider-dot" data-index="9"></button>
-        <button class="slider-dot" data-index="10"></button>
-        <button class="slider-dot" data-index="11"></button>
-      </div>
-    </div>
-    <div class="hero-benefits">
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <img src="assets/Icons/sustainability.png" alt="Sustainability" />
-        </div>
-        <h4>Sustainability</h4>
-        <p>100% recyclable PET.<br>No consumer adoption required.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <img src="assets/Icons/consumer-exp.png" alt="Consumer Experience" />
-        </div>
-        <h4>Consumer Experience</h4>
-        <p>No pads, no disgust,<br>no gloves.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <img src="assets/Icons/merchandising.png" alt="Merchandising" />
-        </div>
-        <h4>Merchandising</h4>
-        <p>Pad-less design drives shelf appeal<br>&amp; impulse sales.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <img src="assets/Icons/recycling.png" alt="Post-Consumer Recycled" />
-        </div>
-        <h4>Post-Consumer Recycled</h4>
-        <p>One material.<br>Infinite recycling loops.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- MARQUEE STATS BAR -->
-  <div class="stats-bar">
+    <!-- Large headline (sits behind tray image) -->
+    <div class="hero-head">
+      <h1 class="hero-headline">
+        <span>We solved the world's largest</span>
+        <span>sustainable food packaging problem</span>
+      </h1>
+      <p class="hero-subhead">50 billion of your glued-on soaker pads dumped into landfills every year</p>
+    </div>
+
+    <!-- Floating benefit cards: 2 left, 2 right overlapping tray -->
+    <div class="hero-benefit-card hbc-l1">
+      <img src="assets/Icons/sustainability.png" class="hbc-icon" alt="" />
+      <span class="hbc-title">Sustainability</span>
+      <span class="hbc-desc">100% recyclable PET.<br>No adoption required.</span>
+    </div>
+    <div class="hero-benefit-card hbc-l2">
+      <img src="assets/Icons/consumer-exp.png" class="hbc-icon" alt="" />
+      <span class="hbc-title">Consumer Experience</span>
+      <span class="hbc-desc">No pads, no disgust,<br>no gloves.</span>
+    </div>
+    <div class="hero-benefit-card hbc-r1">
+      <img src="assets/Icons/merchandising.png" class="hbc-icon" alt="" />
+      <span class="hbc-title">Merchandising</span>
+      <span class="hbc-desc">Drives shelf appeal<br>&amp; impulse sales.</span>
+    </div>
+    <div class="hero-benefit-card hbc-r2">
+      <img src="assets/Icons/recycling.png" class="hbc-icon" alt="" />
+      <span class="hbc-title">Post-Consumer Recycled</span>
+      <span class="hbc-desc">One material.<br>Infinite recycling loops.</span>
+    </div>
+
+
+    <!-- Tray image (in front of headline) -->
+    <div class="hero-tray-wrap">
+      <img src="assets/hero-final.png" alt="Lucid Infinity tray" class="hero-tray-img" />
+    </div>
+
+    <!-- ALL INFINITY CATEGORIES — glass strip above marquee -->
+    <div class="inf-cats-hero">
+      <div class="inf-cats-grid">
+        <div class="inf-cat-card">
+          <h3 class="inf-cat-title">Infinity Protein</h3>
+          <p class="inf-cat-desc">Keep meat fresh and packaging clean; designed for retail and foodservice.</p>
+          <a href="#products" class="inf-cat-cta">Learn more ›</a>
+        </div>
+        <div class="inf-cat-card">
+          <h3 class="inf-cat-title">Cut Fruit</h3>
+          <p class="inf-cat-desc">Longer shelf life, moisture-managed design, and custom depths.</p>
+          <a href="#products" class="inf-cat-cta">Learn more ›</a>
+        </div>
+        <div class="inf-cat-card">
+          <h3 class="inf-cat-title">Infinity Berries</h3>
+          <p class="inf-cat-desc">Optimized venting options. Lightweight, durable structure built for berry freshness and shelf life.</p>
+          <a href="#products" class="inf-cat-cta">Learn more ›</a>
+        </div>
+        <div class="inf-cat-card">
+          <h3 class="inf-cat-title">Infinity Food Service</h3>
+          <p class="inf-cat-desc">High-volume, durable trays built for the demands of commercial kitchens, catering, and distribution.</p>
+          <a href="#products" class="inf-cat-cta">Learn more ›</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MARQUEE STATS BAR — pinned to hero bottom -->
+    <div class="stats-bar">
     <div class="stats-track">
       <div class="stats-set">
-        <span>Zero Soaker Pads</span>
+        <span class="marquee-brand">LUCID INFINITY™ PACKAGING:</span>
+        <span>No absorbent pads</span>
         <span class="dot">·</span>
         <span>100% Recyclable</span>
         <span class="dot">·</span>
-        <span>rPET &amp; Ocean-Bound Plastics</span>
+        <span>Leak-resistant</span>
         <span class="dot">·</span>
-        <span>30+ Years Experience</span>
+        <span>0% contaminants</span>
         <span class="dot">·</span>
-        <span>Brampton, Ontario</span>
+        <span>Customizable</span>
         <span class="dot">·</span>
-        <span>Vertically Integrated</span>
+        <span>100% Clear PET</span>
         <span class="dot">·</span>
-        <span>In-House Tooling &amp; Design</span>
+        <span>No Fabrics</span>
         <span class="dot">·</span>
-        <span>Never Out-of-Stock</span>
+        <span>No Desiccant Beads</span>
+        <span class="dot">·</span>
+        <span>Patented &amp; Proven</span>
         <span class="dot">·</span>
       </div>
       <div class="stats-set" aria-hidden="true">
-        <span>Zero Soaker Pads</span>
+        <span class="marquee-brand">LUCID INFINITY™ PACKAGING:</span>
+        <span>No absorbent pads</span>
         <span class="dot">·</span>
         <span>100% Recyclable</span>
         <span class="dot">·</span>
-        <span>rPET &amp; Ocean-Bound Plastics</span>
+        <span>Leak-resistant</span>
         <span class="dot">·</span>
-        <span>30+ Years Experience</span>
+        <span>0% contaminants</span>
         <span class="dot">·</span>
-        <span>Brampton, Ontario</span>
+        <span>Customizable</span>
         <span class="dot">·</span>
-        <span>Vertically Integrated</span>
+        <span>100% Clear PET</span>
         <span class="dot">·</span>
-        <span>In-House Tooling &amp; Design</span>
+        <span>No Fabrics</span>
         <span class="dot">·</span>
-        <span>Never Out-of-Stock</span>
+        <span>No Desiccant Beads</span>
+        <span class="dot">·</span>
+        <span>Patented &amp; Proven</span>
         <span class="dot">·</span>
       </div>
     </div>
   </div>
+  </section>
 
   <!-- SERVICES SLIDER -->
   <section class="services-slider-section">
@@ -550,5 +536,21 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Staggered scroll animation for infinity categories
+    const catCards = document.querySelectorAll('.inf-cat-card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const cards = entry.target.parentElement.querySelectorAll('.inf-cat-card');
+          cards.forEach((card, i) => {
+            setTimeout(() => card.classList.add('in-view'), i * 120);
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    if (catCards.length) observer.observe(catCards[0]);
+  </script>
 </body>
 </html>
