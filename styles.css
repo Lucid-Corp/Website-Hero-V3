@@ -229,12 +229,42 @@ body {
   gap: 6px;
   box-shadow: 0 8px 28px rgba(0,0,0,0.10);
   width: 200px;
-  height: 145px;
+  height: 150px;
+  box-sizing: border-box;
+  overflow: hidden;
   z-index: 4;
   opacity: 0;
 }
 
 /* Left pair — overlap left edge of tray */
+/* V3: tray hidden, cards centered in a row */
+.hero-tray-wrap { display: none; }
+
+.hbc-row {
+  position: absolute;
+  top: 47%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  z-index: 4;
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards 0.4s;
+}
+
+.hbc-row .hero-benefit-card {
+  position: relative !important;
+  top: auto; left: auto; right: auto;
+  opacity: 1 !important;
+  animation: hbcFloat 4s ease-in-out 1s infinite;
+}
+
+.hbc-row .hero-benefit-card:nth-child(2) { animation-delay: 1.4s; }
+.hbc-row .hero-benefit-card:nth-child(3) { animation-delay: 1.8s; }
+.hbc-row .hero-benefit-card:nth-child(4) { animation-delay: 2.2s; }
+
 /* Left pair — horizontal, outer then inner */
 .hbc-l1 {
   left: 24%;
@@ -541,7 +571,7 @@ body {
   white-space: nowrap;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  top: calc(var(--nav-h) + 230px);
   left: 0;
   right: 0;
   z-index: 10;
@@ -575,10 +605,12 @@ body {
 /* ── ALL INFINITY CATEGORIES (inside hero, above marquee) ── */
 .inf-cats-hero {
   position: absolute;
-  bottom: 54px;
+  top: calc(47% + 162px);
   left: 0; right: 0;
   padding: 0 4%;
   z-index: 6;
+  display: flex;
+  justify-content: center;
   opacity: 0;
   animation: fadeUp 0.7s ease forwards 0.8s;
 }
@@ -594,9 +626,9 @@ body {
 }
 
 .inf-cats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
 .inf-cat-card {
@@ -605,8 +637,16 @@ body {
   -webkit-backdrop-filter: blur(24px) saturate(180%);
   border: 1px solid rgba(255,255,255,0.8);
   border-radius: 16px;
-  padding: 20px 20px;
+  padding: 18px 20px;
   text-align: center;
+  width: 200px;
+  height: 150px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0 4px 20px rgba(0,0,0,0.09), inset 0 1px 0 rgba(255,255,255,0.9);
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
